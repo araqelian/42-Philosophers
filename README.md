@@ -88,3 +88,11 @@ and &nbsp;X&nbsp; <i>with &nbsp;the &nbsp;philosopher &nbsp;number</i>.
 after &nbsp;the actual&nbsp; death&nbsp; of&nbsp; the&nbsp; philosopher.
 <li>Again, &nbsp;philosophers &nbsp;should &nbsp;avoid&nbsp; dying!
 </ul>
+
+<br><br>
+
+> [!NOTE]  
+> Because of 42 School norm requirements:
+> * Each function can't have more than 25 lines of code.
+> * All variables are declared and aligned at the top of each function.
+> * Project should be created just with allowed functions otherwise it's cheating.
