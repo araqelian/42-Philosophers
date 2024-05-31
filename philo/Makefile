@@ -17,22 +17,22 @@ OBJS = $(patsubst %.c, %.o, $(SRCS))
 RM = rm -f
 
 %.o: %.c
-	$(CC) $(FLAGS) -c $< -o $@ 
+	@$(CC) $(FLAGS) -c $< -o $@ 
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	@echo $(NONE)$(YELLOW) "\t\t🤹 Compiling $(NAME)..." $(NONE)
-	$(CC) $(FLAGS) -o $(NAME) $(OBJS)
+	@$(CC) $(FLAGS) -o $(NAME) $(OBJS)
 	@echo $(NONE)$(GREEN)"\t\t😱 Compiled   $(NAME)\n"$(NONE)
 
 clean:
 	@echo $(RED) "\t\t🙀 Removing object files..." $(NONE)
-	$(RM) $(OBJS)
+	@$(RM) $(OBJS)
 
 fclean: clean
 	@echo $(RED) "\t\t🙀 Removing $(NAME)..." $(NONE)
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean all
 
